@@ -43,7 +43,28 @@
 
     
     class Counter {
-        
-        
+
+        //initialises private count variable
+        private $count;
+
+        //constructor function initialises count variable
+        function __construct($count = 0){
+            $this->count = $count;
+        }
+
+        //increments count by given amount
+        function count($n = 1) {
+            $this->count += $n;
+        }
+
+        //returns the current count value
+        function get() {
+            return $this->count;
+        }
+
+        //resets the count to 0
+        function reset() {
+            $this->count = 0;
+        }
 
     }
